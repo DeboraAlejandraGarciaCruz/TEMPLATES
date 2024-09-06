@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.content-grid{
+    display: grid;
+    margin: 0 auto;
+    grid-template-areas: 
+    'titulo   titulo   menu   menu'
+    'slide   slide    slide    slide'
+    'carrucel     carrucel    carru-info  carru-info'
+    'imagen imagen  imagen  imagen'
+    'video    video    video    video'
+    'derechos   derechos    derechos    derechos'
+    'contacto     contacto    contacto   contacto'
+    ;
+    width: 600px;
+    height: 600px;
+}
+
+.contenido:nth-child(1){
+    background: lightseagreen;
+    grid-area: titulo;
+}
+.contenido:nth-child(2){
+    background: lightgreen;
+    grid-area: menu;
+}
+.contenido:nth-child(3){
+    background: lightskyblue;
+    grid-area: slide;
+}
+.contenido:nth-child(4){
+    background: lightgoldenrodyellow;
+    grid-area: carrucel;
+}
+.contenido:nth-child(5){
+    background: #F06292;
+    grid-area: carru-info;
+}
+.contenido:nth-child(6){
+    background: darkred;
+    grid-area: imagen;
+}
+.contenido:nth-child(7){
+    background: darkorange;
+    grid-area: video;
+}
+.contenido:nth-child(8){
+    background: darkcyan;
+    grid-area: derechos;
+}
+.contenido:nth-child(9){
+    background: darkorchid;
+    grid-area: contacto;
+}
+@media screen and (min-width:768px){
+    .content-grid{
+        display: grid;
+        margin: 0 auto;
+        grid-template-areas: 
+        'titulo   menu   menu   menu'
+        'slide   slide    slide    slide'
+        'carrucel       carrucel    carrucel    carrucel'
+        'carru-info carru-info  imagen  imagen'
+        'video    video    derechos    derechos'
+        'contacto     contacto    contacto   contacto'
+        ;
+        width: 600px;
+        height: 600px;
+    }
+    .contenido:nth-child(1){
+        background: lightseagreen;
+        grid-area: titulo;
+    }
+    .contenido:nth-child(2){
+        background: lightgreen;
+        grid-area: menu;
+    }
+    .contenido:nth-child(3){
+        background: lightskyblue;
+        grid-area: slide;
+    }
+    .contenido:nth-child(4){
+        background: lightgoldenrodyellow;
+        grid-area: carrucel;
+    }
+    .contenido:nth-child(5){
+        background: #F06292;
+        grid-area: carru-info;
+    }
+    .contenido:nth-child(6){
+        background: darkred;
+        grid-area: imagen;
+    }
+    .contenido:nth-child(7){
+        background: darkorange;
+        grid-area: video;
+    }
+    .contenido:nth-child(8){
+        background: darkcyan;
+        grid-area: derechos;
+    }
+    .contenido:nth-child(9){
+        background: darkorchid;
+        grid-area: contacto;
+    }
+}
+@media screen and (min-width:968px){
+    .content-grid{
+        margin: 0 auto;
+        display: grid;
+        grid-template-areas: 
+        'titulo   slide   slide   slide'
+        'menu   slide    slide    slide'
+        'imagen       carrucel    carrucel    carrucel'
+        'imagen       carru-info    carru-info    carru-info'
+        'imagen       video    video    video'
+        'imagen       derechos    derechos    derechos'
+        'contacto     contacto    contacto   contacto'
+        ;
+        width: 600px;
+        height: 600px;
+    }
+    .contenido:nth-child(1){
+        background: lightseagreen;
+        grid-area: titulo;
+    }
+    .contenido:nth-child(2){
+        background: lightgreen;
+        grid-area: menu;
+    }
+    .contenido:nth-child(3){
+        background: lightskyblue;
+        grid-area: slide;
+    }
+    .contenido:nth-child(4){
+        background: lightgoldenrodyellow;
+        grid-area: carrucel;
+    }
+    .contenido:nth-child(5){
+        background: #F06292;
+        grid-area: carru-info;
+    }
+    .contenido:nth-child(6){
+        background: darkred;
+        grid-area: imagen;
+    }
+    .contenido:nth-child(7){
+        background: darkorange;
+        grid-area: video;
+    }
+    .contenido:nth-child(8){
+        background: darkcyan;
+        grid-area: derechos;
+    }
+    .contenido:nth-child(9){
+        background: darkorchid;
+        grid-area: contacto;
+    }
+}

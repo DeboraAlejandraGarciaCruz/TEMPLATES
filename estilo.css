@@ -1,0 +1,85 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+h1{
+text-align: center;
+margin-top: 30px;
+margin-bottom: 30px;
+}
+
+.content-grid{
+    display: grid;
+    grid-template-areas:
+    'Logo     Titulo    Titulo   Titulo     Titulo      Titulo'
+    'Logo     Titulo    Titulo   Titulo     Titulo      Titulo'
+    'Menu     Slides    Carrucel Carrucel   Carrucel    Inf_Carrucel'
+    'Menu     Slides    Carrucel Carrucel   Carrucel    Inf_Carrucel'
+    'Menu     Slides    Carrucel Carrucel   Carrucel    Inf_Carrucel'
+    'Menu     Slides    Imagen   Video      Video       Video'
+    'Menu     Slides    Imagen   Video      Video       Video'
+    'Menu     Slides    Imagen   Video      Video       Video'
+    'Derechos Derechos  Derechos Contacto   Redes       Redes'
+    'Derechos Derechos  Derechos Contacto   Redes       Redes'
+    ;
+    margin: 0 auto;
+    height: 500px;
+    width: 800px;
+    gap: .2em;
+}
+
+.contenido:nth-child(1){
+    background: #874039 ;
+    grid-area: Logo;
+    
+}
+
+.contenido:nth-child(2){
+    background:#ad52d4 ;
+    grid-area: Titulo;
+}
+
+.contenido:nth-child(3){
+    background: #a7d57f;
+    grid-area: Menu;
+}
+
+.contenido:nth-child(4){
+    background: #7683d7 ;
+    grid-area: Slides;
+}
+
+.contenido:nth-child(5){
+    background: #b39745;
+    grid-area: Carrucel;
+}
+
+.contenido:nth-child(6){
+    background: #f43f84;
+    grid-area: Inf_Carrucel;
+}
+
+.contenido:nth-child(7){
+    background: #41e0f5 ;
+    grid-area: Imagen;
+}
+.contenido:nth-child(8){
+    background: #EB984E ;
+    grid-area: Video;
+}
+
+.contenido:nth-child(9){
+    background: #3800d3 ;
+    grid-area: Derechos;
+}
+
+.contenido:nth-child(10){
+    background: #218088 ;
+    grid-area: Contacto;
+}
+
+.contenido:nth-child(11){
+    background: #743949 ;
+    grid-area: Redes;
+}

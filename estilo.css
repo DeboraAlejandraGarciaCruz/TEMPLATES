@@ -1,85 +1,136 @@
 *{
-margin: 0;
-padding: 0;
+    margin: 0;
+    padding: 0;
 }
-
 h1{
-text-align: center;
-margin-top: 30px;
-margin-bottom: 30px;
+    text-align: center;
+    margin-top: 30px;
 }
 
 .content-grid{
     display: grid;
-    grid-template-areas:
-    'Logo     Titulo    Titulo   Titulo     Titulo      Titulo'
-    'Logo     Titulo    Titulo   Titulo     Titulo      Titulo'
-    'Menu     Slides    Carrucel Carrucel   Carrucel    Inf_Carrucel'
-    'Menu     Slides    Carrucel Carrucel   Carrucel    Inf_Carrucel'
-    'Menu     Slides    Carrucel Carrucel   Carrucel    Inf_Carrucel'
-    'Menu     Slides    Imagen   Video      Video       Video'
-    'Menu     Slides    Imagen   Video      Video       Video'
-    'Menu     Slides    Imagen   Video      Video       Video'
-    'Derechos Derechos  Derechos Contacto   Redes       Redes'
-    'Derechos Derechos  Derechos Contacto   Redes       Redes'
-    ;
     margin: 0 auto;
-    height: 500px;
-    width: 800px;
+    grid-template-areas: 
+    'titulo   titulo   menu   menu'
+    'slide   slide    slide    slide'
+    'carrucel     carrucel    carru-info  carru-info'
+    'imagen imagen  imagen  imagen'
+    'video    video    video    video'
+    'derechos   derechos    derechos    derechos'
+    'contacto     contacto    contacto   contacto'
+    ;
+    width: 500px;
+    height: 400px;
     gap: .2em;
 }
 
 .contenido:nth-child(1){
-    background: #874039 ;
-    grid-area: Logo;
-    
+    background: rgb(144, 214, 109);
+    grid-area: titulo;
 }
-
 .contenido:nth-child(2){
-    background:#ad52d4 ;
-    grid-area: Titulo;
+    background: rgb(135, 190, 135);
+    grid-area: menu;
 }
-
 .contenido:nth-child(3){
-    background: #a7d57f;
-    grid-area: Menu;
+    background: rgb(113, 146, 164);
+    grid-area: slide;
 }
-
 .contenido:nth-child(4){
-    background: #7683d7 ;
-    grid-area: Slides;
+    background: #ebeb71;
+    grid-area: carrucel;
 }
-
 .contenido:nth-child(5){
-    background: #b39745;
-    grid-area: Carrucel;
+    background: #F06292;
+    grid-area: carru-info;
 }
-
 .contenido:nth-child(6){
-    background: #f43f84;
-    grid-area: Inf_Carrucel;
+    background: rgb(224, 175, 175);
+    grid-area: imagen;
 }
-
 .contenido:nth-child(7){
-    background: #41e0f5 ;
-    grid-area: Imagen;
+    background: rgb(200, 171, 137);
+    grid-area: video;
 }
 .contenido:nth-child(8){
-    background: #EB984E ;
-    grid-area: Video;
+    background: rgb(138, 205, 205);
+    grid-area: derechos;
 }
-
 .contenido:nth-child(9){
-    background: #3800d3 ;
-    grid-area: Derechos;
+    background: rgb(192, 155, 210);
+    grid-area: contacto;
 }
 
-.contenido:nth-child(10){
-    background: #218088 ;
-    grid-area: Contacto;
-}
 
-.contenido:nth-child(11){
-    background: #743949 ;
-    grid-area: Redes;
+    @media screen and (min-width:577px){
+        .content-grid{
+            display: grid;
+            margin: 0 auto;
+            grid-template-areas: 
+            'titulo   menu   menu   menu'
+            'slide   slide    slide    slide'
+            'carrucel       carrucel    carrucel    carrucel'
+            'carru-info carru-info  imagen  imagen'
+            'video    video    derechos    derechos'
+            'contacto     contacto    contacto   contacto'
+            ;
+            width: 500px;
+            height: 400px;
+            gap: .2em;
+        }
+        
+}
+@media screen and (min-width:576px){
+    .content-grid{
+        display: grid;
+        margin: 0 auto;
+        grid-template-areas: 
+        'titulo   menu   menu   menu'
+        'slide   slide    slide    slide'
+        'carrucel       carrucel    carrucel    carrucel'
+        'carru-info carru-info  imagen  imagen'
+        'video    video    derechos    derechos'
+        'contacto     contacto    contacto   contacto'
+        ;
+        width: 500px;
+        height: 400px;
+        gap: .2em;
+    }
+    
+}
+@media screen and (min-width:768px){
+    .content-grid{
+        display: grid;
+        margin: 0 auto;
+        grid-template-areas: 
+        'titulo   menu   menu   menu'
+        'slide   slide    slide    slide'
+        'carrucel       carrucel    carrucel    carrucel'
+        'carru-info carru-info  imagen  imagen'
+        'video    video    derechos    derechos'
+        'contacto     contacto    contacto   contacto'
+        ;
+        width: 500px;
+        height: 400px;
+        gap: .2em;
+    }
+    
+}
+@media screen and (min-width:769px){
+    .content-grid{
+        margin: 0 auto;
+        display: grid;
+        grid-template-areas: 
+        'titulo   slide   slide   slide'
+        'menu   slide    slide    slide'
+        'imagen       carrucel    carrucel    carrucel'
+        'imagen       carru-info    carru-info    carru-info'
+        'imagen       video    video    video'
+        'imagen       derechos    derechos    derechos'
+        'contacto     contacto    contacto   contacto'
+        ;
+        width: 600px;
+        height: 600px;
+    }
+    
 }

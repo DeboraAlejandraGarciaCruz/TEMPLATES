@@ -16,3 +16,20 @@ El proyecto **template_css_grid** es una plantilla de diseño web creada utiliza
 2. Abre el archivo `index.html` en tu navegador para ver cómo se aplica el diseño de CSS Grid.
 3. Personaliza las clases y las reglas en el archivo `styles.css` según las necesidades de tu proyecto para adaptar el diseño.
 4. Utiliza esta plantilla como punto de partida para desarrollar sitios web complejos y bien estructurados.
+
+## Ejemplos de Uso en Páginas Web
+
+El **template_css_grid** es ideal para proyectos como:
+
+- **Portales de Noticias**: Permite organizar múltiples artículos y secciones de noticias en una cuadrícula clara y bien definida.
+- **Dashboards**: Crea paneles de control con gráficos, estadísticas y widgets organizados en un diseño de rejilla.
+- **Portafolios Digitales**: Muestra proyectos, imágenes y textos en una estructura visual atractiva y profesional.
+
+## Estructura del Proyecto
+
+- `index.html`: Contiene la estructura principal de la página utilizando CSS Grid para organizar los elementos.
+- `styles.css`: Incluye los estilos que definen la disposición de la cuadrícula y el diseño de cada sección.
+
+## Autor
+
+Debora Alejandra

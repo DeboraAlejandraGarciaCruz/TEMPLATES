@@ -1,5 +1,4 @@
-# Template CSS Grid 12345678
-
+# Template CSS Grid 1234567
 El proyecto **template_css_grid** es una plantilla de diseño web creada utilizando CSS Grid. Está diseñada para ayudar a los desarrolladores a crear páginas web estructuradas y responsivas, aprovechando las capacidades avanzadas de maquetación que ofrece CSS Grid.
 
 ## Funcionalidad

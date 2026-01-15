@@ -31,4 +31,4 @@ El **template_css_grid** es ideal para proyectos como:
 
 ## Autor
 
-Debora Alejandra Garcia Cruz. 
+Debora Alejandra Garcia Cruz
